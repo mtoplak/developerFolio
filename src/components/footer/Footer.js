@@ -18,6 +18,7 @@ export default function Footer() {
           <a href="https://github.com/saadpasta/developerFolio">
             developerFolio
           </a>
+          .
         </p>
       </div>
     </Fade>

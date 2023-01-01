@@ -1,15 +1,16 @@
 import React from "react";
 import "./GithubProfileCard.scss";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
-import {contactInfo, isHireable} from "../../portfolio";
+import {contactInfo, open} from "../../portfolio";
 import emoji from "react-easy-emoji";
 import {Fade} from "react-reveal";
+import pfp from "../../assets/images/pic.jpg";
 
 export default function GithubProfileCard({prof}) {
-  if (isHireable) {
-    prof.hireable = "Yes";
+  if (open) {
+    prof.open = "Yes";
   } else {
-    prof.hireable = "No";
+    prof.open = "No";
   }
   return (
     <Fade bottom duration={1000} distance="20px">
@@ -41,19 +42,10 @@ export default function GithubProfileCard({prof}) {
                 </span>
               </div>
             )}
-            <div className="opp-div">
-              <span className="desc-prof">
-                Open for opportunities: {prof.hireable}
-              </span>
-            </div>
             <SocialMedia />
           </div>
           <div className="image-content-profile">
-            <img
-              src={prof.avatarUrl}
-              alt={prof.name}
-              className="profile-image"
-            />
+            <img src={pfp} alt="mtoplak" className="profile-image" />
           </div>
         </div>
       </div>
