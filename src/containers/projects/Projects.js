@@ -1,9 +1,10 @@
 import React, {useState, useEffect, useContext, Suspense, lazy} from "react";
 import "./Project.scss";
 import Button from "../../components/button/Button";
-import {openSource} from "../../portfolio";
+import {openSource, projects} from "../../portfolio";
 import StyleContext from "../../contexts/StyleContext";
 import Loading from "../../containers/loading/Loading";
+import NonGithubRepoCard from "../../components/githubRepoCard/NonGithubRepoCard";
 export default function Projects() {
   const GithubRepoCard = lazy(() =>
     import("../../components/githubRepoCard/GithubRepoCard")
@@ -56,6 +57,18 @@ export default function Projects() {
               }
               return (
                 <GithubRepoCard repo={v} key={v.node.id} isDark={isDark} />
+              );
+            })}
+            {projects.projects.map((project, i) => {
+              return (
+                <NonGithubRepoCard
+                  key={i}
+                  name={project.name}
+                  description={project.description}
+                  color={project.color}
+                  lang={project.lang}
+                  url={project.url}
+                />
               );
             })}
           </div>

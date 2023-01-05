@@ -20,9 +20,9 @@ const illustration = {
 };
 
 const greeting = {
-  username: "Masa Toplak",
-  title: "Hello, world! I'm Maša.",
-  subTitle: emoji("A passionate information technology student 🚀."),
+  username: "Maša Toplak",
+  title: "Hello, world!",
+  subTitle: emoji("I'm Maša. A passionate information technology student 🚀."),
   resumeLink: "", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
@@ -82,7 +82,7 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fab fa-vuejs"
     },
     {
-      skillName: "Node.js (Express)",
+      skillName: "Node.js (Express.js)",
       fontAwesomeClassname: "fab fa-node"
     },
     {
@@ -344,7 +344,8 @@ const podcastSection = {
 
 const contactInfo = {
   title: emoji("Contact Me ☎️"),
-  subtitle: "Discuss a project or just want to say hi? I'm open for opportunities.",
+  subtitle:
+    "Discuss a project or just want to say hello? I'm open for opportunities.",
   number: "",
   email_address: "masa.toplak45@gmail.com"
 };
@@ -357,6 +358,29 @@ const twitterDetails = {
 };
 
 const open = true; // Open for opportunities: Yes/No in the GitHub footer
+
+// Non Github Projects
+
+const projects = {
+  projects: [
+    {
+      name: "Zdravniki.si",
+      description:
+        "My first ever full stack application made as a project in a team of four for praktikum 1.",
+      url: "https://gitlab.com/z337/Zdravniki.si",
+      color: "#f1e05a",
+      lang: "Javascript"
+    },
+    {
+      name: "Monty Hall Problem Simulation",
+      description:
+        "Terminal application that demonstrates the Monty Hall Paradox.",
+      url: "",
+      color: "#0074d9",
+      lang: "Python"
+    }
+  ]
+};
 
 export {
   illustration,
@@ -375,5 +399,6 @@ export {
   podcastSection,
   contactInfo,
   twitterDetails,
-  open
+  open,
+  projects
 };
