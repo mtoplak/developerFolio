@@ -52,6 +52,35 @@
   height: auto;
 }
 
+.image-content-profile {
+  text-align: center;
+  flex: 20%;
+  max-width: 80%;
+  height: 20%;
+  margin-top: 30px;
+  align-items: center;
+  display: flex;
+}
+
+.image-content-profile > img {
+  margin: auto;
+}
+
+.profile-image {
+  border-radius: 50%;
+  border: 0.5rem solid $githubProfileCardBorder;
+  margin-left: auto;
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  box-shadow: $lightBoxShadow 0 30px 30px -30px;
+  transition: all 0.3s ease-out;
+}
+
+.profile-image:hover {
+  box-shadow: none;
+}
+
 .wave-emoji {
   animation-duration: 1.8s;
   animation-iteration-count: infinite;
@@ -62,25 +91,13 @@
 
 @keyframes wave {
   0% {
-    transform: rotate(0deg);
-  }
-  10% {
-    transform: rotate(-10deg);
-  }
-  20% {
-    transform: rotate(12deg);
-  }
-  30% {
-    transform: rotate(-10deg);
-  }
-  40% {
-    transform: rotate(9deg);
+    transform: translateY(0);
   }
   50% {
-    transform: rotate(0deg);
+    transform: translateY(-15px);
   }
   100% {
-    transform: rotate(0deg);
+    transform: translateY(0);
   }
 }
 

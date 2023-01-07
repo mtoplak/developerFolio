@@ -1,10 +1,11 @@
 import React from "react";
 import "./GithubProfileCard.scss";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
-import {contactInfo, open} from "../../portfolio";
+import {contactInfo, open, illustration} from "../../portfolio";
 import emoji from "react-easy-emoji";
 import {Fade} from "react-reveal";
-import pfp from "../../assets/images/pic.jpg";
+import DisplayLottie from "../displayLottie/DisplayLottie";
+import landingPerson from "../../assets/lottie/sayhi";
 
 export default function GithubProfileCard({prof}) {
   if (open) {
@@ -44,8 +45,15 @@ export default function GithubProfileCard({prof}) {
             )}
             <SocialMedia />
           </div>
-          <div className="image-content-profile">
-            <img src={pfp} alt="mtoplak" className="profile-image" />
+          <div className="wave">
+            {illustration.animated ? (
+              <DisplayLottie animationData={landingPerson} />
+            ) : (
+              <img
+                alt="peace out"
+                src={require("../../assets/images/manOnTable.svg")}
+              ></img>
+            )}
           </div>
         </div>
       </div>

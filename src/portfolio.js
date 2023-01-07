@@ -22,7 +22,9 @@ const illustration = {
 const greeting = {
   username: "Maša Toplak",
   title: "Hello, world!",
-  subTitle: emoji("I'm Maša. A passionate information technology student 🚀."),
+  subTitle: emoji(
+    "I'm Maša. A passionate IT student from Maribor, Slovenia 🚀."
+  ),
   resumeLink: "", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
@@ -46,7 +48,7 @@ const socialMediaLinks = {
 
 const skillsSection = {
   title: "What I do",
-  subTitle: "",
+  subTitle: "MY TOOLS AND TECHNOLOGIES",
   skills: [
     emoji(
       "⚡ I am interested in a variety of development fields and exploring every tech stack"
@@ -70,6 +72,11 @@ https://fontawesome.com/icons?d=gallery */
       skillName: "CSS3",
       fontAwesomeClassname: "fab fa-css3-alt"
     },
+    {
+      skillName: "Bootstrap",
+      fontAwesomeClassname: "fab fa-bootstrap"
+    },
+
     {
       skillName: "JavaScript + TypeScript",
       fontAwesomeClassname: "fab fa-js"
