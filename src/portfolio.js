@@ -23,7 +23,7 @@ const greeting = {
   username: "Maša Toplak",
   title: "Hello, world!",
   subTitle: emoji(
-    "I'm Maša. A passionate IT student from Maribor, Slovenia 🚀."
+    "I'm Maša, a passionate IT student from Maribor, Slovenia who enjoys problem solving with computers 🚀."
   ),
   resumeLink: "", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
@@ -56,8 +56,7 @@ const skillsSection = {
     emoji("⚡ I am committed to constantly improving my skills and progress"),
     emoji(
       "⚡ Delivering functionalities through code is a key part of my interest"
-    ),
-    emoji("⚡ I enjoy problem solving with computers")
+    )
   ],
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
