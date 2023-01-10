@@ -22,9 +22,8 @@ const illustration = {
 const greeting = {
   username: "Maša Toplak",
   title: "Hello, world!",
-  subTitle: emoji(
-    "I'm Maša, a passionate IT student from Maribor, Slovenia who enjoys problem solving with computers 🚀."
-  ),
+  subTitle:
+    "I'm Maša, a passionate IT student from Maribor, Slovenia who enjoys problem solving with computers 🚀.",
   resumeLink: "", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
@@ -50,13 +49,9 @@ const skillsSection = {
   title: "What I do",
   subTitle: "MY TOOLS AND TECHNOLOGIES",
   skills: [
-    emoji(
-      "⚡ I am interested in a variety of development fields and exploring every tech stack"
-    ),
-    emoji("⚡ I am committed to constantly improving my skills and progress"),
-    emoji(
-      "⚡ Delivering functionalities through code is a key part of my interest"
-    )
+    "⚡ I am interested in a variety of development fields and exploring every tech stack",
+    "⚡ I am committed to constantly improving my skills and progress",
+    "⚡ Delivering functionalities through code is a key part of my interest"
   ],
 
   /* Make Sure to include correct Font Awesome Classname to view your icon

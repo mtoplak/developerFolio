@@ -3,7 +3,7 @@ import {Fade} from "react-reveal";
 import "./Greeting.scss";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
 import Button from "../../components/button/Button";
-import emoji from "react-easy-emoji";
+//import emoji from "react-easy-emoji";
 import {greeting} from "../../portfolio";
 import StyleContext from "../../contexts/StyleContext";
 import pfp from "../../assets/images/pic.jpg";
@@ -24,7 +24,7 @@ export default function Greeting() {
               >
                 {" "}
                 {greeting.title}{" "}
-                <span className="wave-emoji">{emoji("🌍")}</span>
+                <span className="wave-emoji" role="img" aria-labelledby="">🌍</span>
               </h1>
               <p
                 className={
